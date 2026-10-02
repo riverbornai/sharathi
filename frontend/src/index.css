@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply font-sans text-frost min-h-screen;
+  background-color: #060f0c;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(212, 245, 60, 0.07), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(159, 206, 190, 0.10), transparent 25%);
+}
+
+/* Slim, brand-tinted scrollbars for the conversation panels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(159, 206, 190, 0.2);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(212, 245, 60, 0.35);
+}

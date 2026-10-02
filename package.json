@@ -1,0 +1,20 @@
+{
+  "name": "social-chat-agent",
+  "version": "1.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "dev:server": "npm run dev -w backend",
+    "dev:client": "npm run dev -w frontend",
+    "build": "npm run build -w frontend",
+    "start": "npm start -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

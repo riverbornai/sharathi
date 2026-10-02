@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+# Runtime data: connected Facebook Pages and their access tokens (created automatically)
+backend/data/
+# Temporary archive created by deploy_gcp.sh
+deploy.tar.gz
